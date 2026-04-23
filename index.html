@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PNK – Inicio</title>
+  <meta name="description" content="PNK: la plataforma inmobiliaria freelance de Chile." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <span><a href="reg-gestor.html">Quiero ser Gestor Freelance</a></span>
+      <span><a href="propiedades.html">Publicar Propiedad</a></span>
+      <span><a href="login.html">Ingresar</a></span>
+      <span><a href="registro.html">Registrarse</a></span>
+    </div>
+  </div>
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo"><a href="index.html">PNK</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="propiedades.html">Publicar Propiedad</a></li>
+        <li><a href="gestores.html">Gestores</a></li>
+        <li><a href="login.html">Dashboard</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html"><button class="btn btn-ghost">Ingresar</button></a>
+        <a href="registro.html"><button class="btn btn-nav-primary">Registrarse</button></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Encuentra tu propiedad ideal</h1>
+    <p>Miles de casas, departamentos y proyectos en todo el país</p>
+    <div class="search-box">
+      <div class="search-tabs">
+        <button class="active">Comprar</button>
+        <button>Arrendar</button>
+        <button>Proyectos Nuevos</button>
+      </div>
+      <div class="search-fields">
+        <div class="sf-group">
+          <label>Tipo de inmueble</label>
+          <select>
+            <option value="">Todos los tipos</option>
+            <option>Casa</option>
+            <option>Departamento</option>
+            <option>Terreno</option>
+          </select>
+        </div>
+        <div class="sf-group">
+          <label>Ubicación</label>
+          <input type="text" placeholder="Comuna, ciudad o región..." />
+        </div>
+        <a href="propiedades.html"><button class="btn-search">Buscar</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORÍAS RÁPIDAS -->
+  <div class="quick-cats">
+    <a href="propiedades.html" class="qcat">
+      <img class="qcat-img" src="img/casa.jpg" alt="Casas" />
+      <span>Casas</span>
+    </a>
+    <a href="propiedades.html" class="qcat">
+      <img class="qcat-img" src="img/departamento.jpg" alt="Departamentos" />
+      <span>Departamentos</span>
+    </a>
+    <a href="propiedades.html" class="qcat">
+      <img class="qcat-img" src="img/terreno.jpg" alt="Terrenos" />
+      <span>Terrenos</span>
+    </a>
+  </div>
+
+  <!-- PROPIEDADES DESTACADAS -->
+  <div class="home-section" style="margin-top:3rem">
+    <div class="section-head">
+      <h2>Propiedades Destacadas</h2>
+      <a href="propiedades.html">Ver todas →</a>
+    </div>
+    <div class="props-grid">
+
+      <a href="propiedades.html" class="prop-card">
+        <div class="prop-img">
+          <img src="img/casa.jpg" alt="Casa Las Condes" style="width:100%;height:100%;object-fit:cover;" />
+          <span class="prop-badge">Venta</span>
+        </div>
+        <div class="prop-body">
+          <div class="prop-price">$285.000.000 <small>CLP</small></div>
+          <div class="prop-title">Casa 4D · Las Condes</div>
+          <div class="prop-loc">Las Condes, Región Metropolitana</div>
+          <div class="prop-feats"><span>4 dorm.</span><span>3 baños</span><span>140 m²</span></div>
+        </div>
+      </a>
+
+      <a href="propiedades.html" class="prop-card">
+        <div class="prop-img">
+          <img src="img/departamento.jpg" alt="Depto Providencia" style="width:100%;height:100%;object-fit:cover;" />
+          <span class="prop-badge arr">Arriendo</span>
+        </div>
+        <div class="prop-body">
+          <div class="prop-price">$850.000 <small>/mes</small></div>
+          <div class="prop-title">Depto 2D · Providencia</div>
+          <div class="prop-loc">Providencia, Región Metropolitana</div>
+          <div class="prop-feats"><span>2 dorm.</span><span>2 baños</span><span>72 m²</span></div>
+        </div>
+      </a>
+
+      <a href="propiedades.html" class="prop-card">
+        <div class="prop-img">
+          <img src="img/terreno.jpg" alt="Parcela Colina" style="width:100%;height:100%;object-fit:cover;" />
+          <span class="prop-badge">Venta</span>
+        </div>
+        <div class="prop-body">
+          <div class="prop-price">$68.000.000 <small>CLP</small></div>
+          <div class="prop-title">Parcela 5.000 m² · Colina</div>
+          <div class="prop-loc">Colina, Región Metropolitana</div>
+          <div class="prop-feats"><span>5.000 m²</span><span>Zona rural</span></div>
+        </div>
+      </a>
+
+      <a href="propiedades.html" class="prop-card">
+        <div class="prop-img">
+          <img src="img/casa2.jpg" alt="Casa Ñuñoa" style="width:100%;height:100%;object-fit:cover;" />
+          <span class="prop-badge">Venta</span>
+        </div>
+        <div class="prop-body">
+          <div class="prop-price">$195.000.000 <small>CLP</small></div>
+          <div class="prop-title">Casa 3D · Ñuñoa</div>
+          <div class="prop-loc">Ñuñoa, Región Metropolitana</div>
+          <div class="prop-feats"><span>3 dorm.</span><span>2 baños</span><span>98 m²</span></div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- BANNER GESTOR -->
+  <div class="banner-freelance">
+    <div class="banner-freelance-inner">
+      <div>
+        <h2>¿Quieres ser Gestor Inmobiliario Freelance?</h2>
+        <p>Ayuda a promover propiedades y gana comisiones por cada negocio cerrado.</p>
+      </div>
+      <a href="reg-gestor.html"><button class="btn-yellow-lg">Registrarme como Gestor →</button></a>
+    </div>
+  </div>
+
+  <!-- ESTADÍSTICAS -->
+  <div class="stats-strip" style="margin-bottom:0;padding-bottom:3rem">
+    <div class="stat-item"><div class="n">2.400+</div><div class="l">Propiedades publicadas</div></div>
+    <div class="stat-item"><div class="n">340+</div><div class="l">Gestores freelance activos</div></div>
+    <div class="stat-item"><div class="n">180+</div><div class="l">Negocios cerrados</div></div>
+    <div class="stat-item"><div class="n">15</div><div class="l">Regiones cubiertas</div></div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="home-footer">
+    <div class="home-footer-grid">
+      <div>
+        <div class="footer-brand">PNK</div>
+        <p style="font-size:.82rem;line-height:1.6">La plataforma inmobiliaria freelance<br>que conecta propietarios, gestores<br>y compradores en todo Chile.</p>
+      </div>
+      <div>
+        <h4>Propiedades</h4>
+        <ul>
+          <li><a href="propiedades.html">Casas en venta</a></li>
+          <li><a href="propiedades.html">Departamentos</a></li>
+          <li><a href="propiedades.html">Arriendos</a></li>
+          <li><a href="propiedades.html">Proyectos nuevos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Plataforma</h4>
+        <ul>
+          <li><a href="reg-propietario.html">Soy Propietario</a></li>
+          <li><a href="reg-gestor.html">Soy Gestor</a></li>
+          <li><a href="login.html">Dashboard</a></li>
+          <li><a href="registro.html">Crear Cuenta</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Soporte</h4>
+        <ul>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Términos de uso</a></li>
+          <li><a href="#">Privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 InmoGest – Plataforma Inmobiliaria Freelance · Todos los derechos reservados</div>
+  </div>
+
+</body>
+</html>

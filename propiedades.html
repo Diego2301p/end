@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PNK – Publicar Propiedad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    (function(){
+      if(sessionStorage.getItem('pnk_logged')!=='1'){
+        location.replace('login.html?redirect=propiedades.html');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <span><a href="reg-gestor.html">Quiero ser Gestor Freelance</a></span>
+      <span><a href="propiedades.html">Publicar Propiedad</a></span>
+      <span><a href="login.html">Ingresar</a></span>
+      <span><a href="registro.html">Registrarse</a></span>
+    </div>
+  </div>
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo"><a href="index.html">PNK</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="propiedades.html" class="active">Publicar Propiedad</a></li>
+        <li><a href="gestores.html">Gestores</a></li>
+        <li><a href="login.html">Dashboard</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html"><button class="btn btn-ghost">Ingresar</button></a>
+        <a href="registro.html"><button class="btn btn-nav-primary">Registrarse</button></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="inner-page">
+    <div class="inner-wrap">
+      <h1>Registro de Propiedades</h1>
+      <p class="sub">Ingresa los antecedentes de la vivienda que deseas publicar.</p>
+      <div class="form-box" style="max-width:620px">
+        <h2>Nueva Propiedad</h2>
+        <div class="form-group">
+          <label>Tipo de Propiedad</label>
+          <select>
+            <option value="">-- Seleccionar --</option>
+            <option>Casa</option><option>Departamento</option><option>Terreno</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Operación</label>
+          <select>
+            <option>Venta</option><option>Arriendo</option><option>Arriendo con opción de compra</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Dirección</label><input type="text" placeholder="Calle, número" /></div>
+        <div class="form-row">
+          <div class="form-group"><label>Ciudad / Comuna</label><input type="text" placeholder="Ej: Providencia" /></div>
+          <div class="form-group">
+            <label>Región</label>
+            <select>
+              <option value="">-- Seleccionar --</option>
+              <option>Región Metropolitana</option><option>Valparaíso</option>
+              <option>Biobío</option><option>La Araucanía</option><option>Los Lagos</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Superficie Total (m²)</label><input type="number" placeholder="120" /></div>
+          <div class="form-group"><label>Superficie Útil (m²)</label><input type="number" placeholder="95" /></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Dormitorios</label><input type="number" placeholder="3" /></div>
+          <div class="form-group"><label>Baños</label><input type="number" placeholder="2" /></div>
+        </div>
+        <div class="form-group"><label>Precio (CLP / UF)</label><input type="text" placeholder="Ej: $280.000.000 o 5.000 UF" /></div>
+        <div class="form-group">
+          <label>Descripción</label>
+          <textarea placeholder="Describe las características, estado y atractivos de la propiedad..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Permitir gestión por Gestor Freelance</label>
+          <select><option>Sí, acepto gestores</option><option>No, manejo directo</option></select>
+        </div>
+        <a href="login.html"><button class="form-btn">Publicar Propiedad</button></a>
+      </div>
+    </div>
+    <div class="inner-footer">© 2026 InmoGest · Todos los derechos reservados</div>
+  </div>
+
+</body>
+</html>

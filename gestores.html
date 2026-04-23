@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PNK – Gestores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    (function(){
+      if(sessionStorage.getItem('pnk_logged')!=='1'){
+        location.replace('login.html?redirect=gestores.html');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <span><a href="reg-gestor.html">Quiero ser Gestor Freelance</a></span>
+      <span><a href="propiedades.html">Publicar Propiedad</a></span>
+      <span><a href="login.html">Ingresar</a></span>
+      <span><a href="registro.html">Registrarse</a></span>
+    </div>
+  </div>
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo"><a href="index.html">PNK</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="propiedades.html">Publicar Propiedad</a></li>
+        <li><a href="gestores.html" class="active">Gestores</a></li>
+        <li><a href="login.html">Dashboard</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html"><button class="btn btn-ghost">Ingresar</button></a>
+        <a href="registro.html"><button class="btn btn-nav-primary">Registrarse</button></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="inner-page">
+    <div class="inner-wrap">
+      <h1>Gestores Inmobiliarios</h1>
+      <p class="sub">Conoce los gestores freelance disponibles en la plataforma.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Nombre</th><th>Ciudad</th><th>Prop. Gestionadas</th><th>Negocios Cerrados</th><th>Estado</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>María López</td><td>Santiago</td><td>4</td><td>2</td>
+              <td><span class="chip chip-green">Activo</span></td>
+            </tr>
+            <tr>
+              <td>Juan Pérez</td><td>Valparaíso</td><td>2</td><td>1</td>
+              <td><span class="chip chip-green">Activo</span></td>
+            </tr>
+            <tr>
+              <td>Ana Rojas</td><td>Concepción</td><td>1</td><td>0</td>
+              <td><span class="chip chip-yellow">Nuevo</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="inner-footer">© 2026 InmoGest · Todos los derechos reservados</div>
+  </div>
+
+</body>
+</html>

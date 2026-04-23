@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PNK – Iniciar Sesión</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    // Si ya está logueado, redirigir directamente al destino
+    (function(){
+      if(sessionStorage.getItem('pnk_logged')==='1'){
+        var p=new URLSearchParams(location.search).get('redirect');
+        location.replace(p||'dashboard.html');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <span><a href="reg-gestor.html">Quiero ser Gestor Freelance</a></span>
+      <span><a href="propiedades.html">Publicar Propiedad</a></span>
+      <span><a href="login.html">Ingresar</a></span>
+      <span><a href="registro.html">Registrarse</a></span>
+    </div>
+  </div>
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo"><a href="index.html">PNK</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="propiedades.html">Publicar Propiedad</a></li>
+        <li><a href="gestores.html">Gestores</a></li>
+        <li><a href="login.html" class="active">Dashboard</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html"><button class="btn btn-ghost">Ingresar</button></a>
+        <a href="registro.html"><button class="btn btn-nav-primary">Registrarse</button></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="inner-page">
+    <div class="inner-wrap">
+      <h1>Acceder a tu cuenta</h1>
+      <p class="sub">Debes iniciar sesión para acceder al Dashboard y gestionar tus propiedades.</p>
+      <div class="form-box">
+        <h2>Iniciar Sesión</h2>
+        <div class="form-group"><label>Correo Electrónico</label><input type="email" placeholder="correo@ejemplo.com" /></div>
+        <div class="form-group"><label>Contraseña</label><input type="password" placeholder="Tu contraseña" /></div>
+        <button class="form-btn" id="btn-login" onclick="doLogin()">Ingresar</button>
+        <script>
+          function doLogin(){
+            sessionStorage.setItem('pnk_logged','1');
+            var p=new URLSearchParams(location.search).get('redirect');
+            location.href=p||'dashboard.html';
+          }
+        </script>
+        <p class="form-link"><a href="recuperar.html">Olvidé mi contraseña</a></p>
+        <p class="form-link">¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
